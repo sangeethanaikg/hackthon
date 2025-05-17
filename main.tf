@@ -93,7 +93,7 @@ resource "aws_route_table_association" "private_a" {
 
 resource "aws_ecr_repository" "my_app" {
   name                 = "my-application"
-  image_tag_mutability = "MUTABLE" # Or "IMMUTABLE"
+  image_tag_mutability = "MUTABLE" 
 
   tags = {
     Name = "my-application-repo"
